@@ -6,7 +6,7 @@ namespace Ejercicio8ArrayC
     {
         static void Main(string[] args)
         {
-            //INDEXOFF
+            //INDEXOF
             string[] palabras = { "Hola", "Adiós", "Nuevo", "Viejo", "Vamos" };
             string ele = "Adiós";
             int indice = Array.IndexOf(palabras, ele);
@@ -49,7 +49,11 @@ namespace Ejercicio8ArrayC
 
             //WHERE - filtrar
             int[] numeros = { 1, 5, 7, 8, 4, 3, 9 };
-            numeros.Where(numeros=>numeros>3);
+            var celdasSi =  numeros.Where(numeros=>numeros>3);
+            foreach(int numero in celdasSi)
+            {
+                Console.WriteLine(celdasSi);
+            }
            
         }
     }
